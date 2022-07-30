@@ -11,5 +11,14 @@ export class HeaderNavComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  theme = 'Dark-Theme'
+  changetheme(){
+    document.body.classList.toggle('dark-theme');
+    if(this.theme=='Dark-Theme'){
+      this.theme='Light-Theme'
+    }else{
+      this.theme='Dark-Theme'
+    }
+  }
 
 }

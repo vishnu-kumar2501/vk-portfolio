@@ -1,4 +1,29 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+	--text-color: #222;
+	--bkg-color: #fff;
+	--btn-txt-color: white;
+	--btn-bg-color: rgb(11, 88, 160);
+	--line-color : black;
+  }
+
+body.dark-theme {
+	--text-color: #eee;
+	--bkg-color: #252222;
+	--btn-txt-color: rgb(46, 43, 43);
+	--btn-bg-color: rgb(20, 211, 195);
+	--line-color : white;
+}
+
+body{
+	background: var(--bkg-color);
+}
+
+h1,h2,h3,
+p {
+  color: var(--text-color);
+}
+
 .btn.btn-success {
 	color: #ffffff;
 	background-color: #527a7a;
@@ -37,9 +62,20 @@
 	box-shadow: 0 0 0 0.2rem rgb(71, 107, 107)
   }
 
+  .accordion-body{
+	background: var(--bkg-color);
+	color: var(--text-color);
+
+  }
+
+  .accordion-item{
+	border: var(--line-color);
+  }
+
   .list-group-item{
 	background-color: inherit;
 	border: 0;
+	color: var(--text-color);
 	font-size: large;
 	font-weight: 500;
   }
@@ -56,8 +92,8 @@
 	height: 1px;
     width: 50%;
     border-width: 0;
-    color: black;
-    background-color: black;
+    color: var(--line-color);
+    background-color: var(--line-color);
 }
  
 .footer-container {
